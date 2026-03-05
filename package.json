@@ -1,9 +1,9 @@
 {
-  "name": "viral-tweets",
-  "version": "1.0.1",
+  "name": "viral-tweets-dashboard",
+  "version": "1.0.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
     "lint": "next lint"
@@ -13,7 +13,6 @@
     "react": "^19",
     "react-dom": "^19",
     "lucide-react": "^0.511.0",
-    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "tailwind-merge": "^3.3.0"
   },

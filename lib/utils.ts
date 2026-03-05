@@ -18,8 +18,9 @@ export function formatNumber(num: number): string {
   return num.toString()
 }
 
-export function timeAgo(timestamp: number): string {
-  const seconds = Math.floor((Date.now() - timestamp) / 1000)
+export function timeAgo(timestamp: string | number): string {
+  const time = typeof timestamp === "string" ? new Date(timestamp).getTime() : timestamp
+  const seconds = Math.floor((Date.now() - time) / 1000)
   
   if (seconds < 60) return "just now"
   if (seconds < 3600) return `${Math.floor(seconds / 60)}m ago`

@@ -4,16 +4,13 @@ export interface Tweet {
   author: string
   username: string
   avatar: string
-  verified: boolean
   views: number
   likes: number
   retweets: number
   replies: number
-  quotes: number
-  created: string
-  timestamp: number
+  timestamp: string
   url: string
-  media: string | null
+  media?: string | null
   engagement: number
   category: string
 }

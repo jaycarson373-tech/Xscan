@@ -39,6 +39,7 @@ export function TweetCard({ tweet, rank }: TweetCardProps) {
               width={44}
               height={44}
               className="rounded-full shrink-0"
+              unoptimized
             />
           ) : (
             <div className="w-11 h-11 rounded-full bg-muted shrink-0" />
@@ -65,6 +66,7 @@ export function TweetCard({ tweet, rank }: TweetCardProps) {
             fill
             className="object-cover"
             sizes="(max-width: 768px) 100vw, 400px"
+            unoptimized
           />
         </div>
       ) : tweet.text ? (
