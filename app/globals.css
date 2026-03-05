@@ -1,0 +1,44 @@
+@import "tailwindcss";
+
+:root {
+  --background: 220 20% 10%;
+  --foreground: 210 20% 95%;
+  --card: 220 20% 13%;
+  --card-foreground: 210 20% 95%;
+  --muted: 220 15% 20%;
+  --muted-foreground: 215 15% 60%;
+  --border: 220 15% 20%;
+  --primary: 205 100% 55%;
+  --primary-foreground: 0 0% 100%;
+  --accent: 25 95% 55%;
+  --accent-foreground: 0 0% 100%;
+  --radius: 0.5rem;
+}
+
+* {
+  border-color: hsl(var(--border));
+}
+
+body {
+  background: hsl(var(--background));
+  color: hsl(var(--foreground));
+}
+
+@theme inline {
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-border: hsl(var(--border));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --font-sans: var(--font-inter);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+}
